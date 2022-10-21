@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Ritik Rastogi</title>
+    <link rel="stylesheet" href="style.css">
+    <!------------ Font awosem script for online icons ------------>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <!---------------------- Favicon Of My Site ---------------------->
+    <script src="https://kit.fontawesome.com/ff12e974b8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!---------------- this is header of My Website ------------------------>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ritik-low-resolution-logo-black-on-transparent-background.png" class="logo">
+
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span class="auto-type"></span></p>
+                <h1>Hi, I'm <span>Ritik Rastogi</span>.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------- this is about of my Website ------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic2.jpg" alt="" title="Ritik Rastogi">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate, meticulous and hardworking individual and I love working in a collaborative
+                        environment.
+                        I am always ready and excited to have new experiences, meet new people and learn new things. I
+                        find the idea of creating value for people and for society through my work extremely gratifying.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('exprience')">Exprience</p>
+                        <p class="tab-links" onclick="openTab('eduction')">Eduction</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Frontend Development</li>
+                            <li><span>CSS</span><br>Frontend Development</li>
+                            <li><span>Bootstrap</span><br>Frontend Development</li>
+                            <li><span>React Developer</span><br>Frontend Development</li>
+                            <li><span>React Redux</span><br>Frontend Development</li>
+                            <li><span>Node.Js Developer</span><br>Backend Development</li>
+                            <li><span>Express.Js Developer</span><br>Backend Development</li>
+                            <li><span>MERN Stack Development</span><br>Full Stack Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exprience">
+                        <ul>
+                            <li><span>Full stack Web Development Training</span><br>From Udemy</li>
+                            <li><span>MERN stack Development Training</span><br>From Udemy</li>
+                            <li><span>E-commerce Website Project</span><br>Currently working</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="eduction">
+                        <ul>
+                            <li><span>High School</span><br>From-State Board (2016-17) / 74%</li>
+                            <li><span>Intermidiate</span><br>From-State Board(2018-19) / 62%</li>
+                            <li><span>Graduation</span><br>B.tech (2019-23) / CSE</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- Services ---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React Developer</h2>
+                    <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+                        It lets you compose complex UIs from small and isolated pieces of code called “components”.
+                    </p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node-js"></i>
+                    <h2>Node.js Developer</h2>
+                    <p>Node. js (Node) is an open source development platform for executing JavaScript code server-side.
+                        Node is useful for developing applications that require a persistent connection from the browser
+                        to the server and is often used for real-time applications such as chat, news feeds and web push
+                        notifications.
+                    </p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development is the building and maintenance of websites; it's the work that happens behind
+                        the scenes to make a website look great, work fast and perform well with a seamless user
+                        experience.
+                    </p>
+                    <a href="#">Learn more..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ Portfolio ------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Single Page Applications</h3>
+                        <p>Single page applications (SPAs) are everywhere.
+                            Even if you're not exactly sure what they are,
+                            you most likely use them regularly —
+                            they're a great tool for making incredibly engaging and
+                            unique experiences for website users.</p>
+                        <a href="https://github.com/Rastogiritik/newsmania.git" target="_blank"><i
+                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Node JS Websites</h3>
+                        <p>Using Node. js for web app development is one of the best options
+                            for large organisations as it's fast and scalable.
+                            As it runs on the V8 engine it is very fast in terms of computing speed
+                            which can in turn increase traffic on the web and mobile portals.</p>
+                        <a href="https://github.com/Rastogiritik/World-sWeather-App.git" target="_blank"><i
+                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>MERN Stack Development</h3>
+                        <p>We develop eCommerce website that are designed from the ground up to impress your customer.
+                            Our goal is to help you sell more products while spending less time managing your site.
+                            Advanced Technology.</p>
+                        <a href="https://github.com/Rastogiritik/My-Store-E-Commerce-website.git" target="_blank"><i
+                                class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!------------------------- Contact Me! ---------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p><i class="fa-solid fa-square-envelope"></i> rastogiritik008@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 6395102245</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/ritik-rastogi-4020a5220" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Rastogiritik/My-Store-E-Commerce-website.git" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://instagram.com/ritikrastogi0?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100009228863177" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/RitikRastogi_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="eample@gamil.com" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ritik. Made with ❤️ by Ritik Rastogi</p>
+        </div>
+    </div>
+
+    <!-------------------- Some Script -------------------------->
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Website Developer", "React Developer", "Node.Js Developer", "MERN Stack Developer"],
+            typeSpeed: 30,
+            backSpeed: 60,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
